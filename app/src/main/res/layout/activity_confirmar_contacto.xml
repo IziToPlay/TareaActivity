@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/horizontal_margin"
+    android:layout_marginEnd="@dimen/horizontal_margin"
+    android:layout_marginTop="@dimen/vertical_margin"
+    android:layout_marginBottom="@dimen/vertical_margin"
+    tools:context=".ConfirmarContacto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/titulo_confirmar_contacto"
+        android:textSize="30sp"
+        android:layout_marginBottom="@dimen/vertical_margin"></TextView>
+
+    <TextView
+        android:id="@+id/tvLblNombreCompleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vertical_margin"></TextView>
+    <TextView
+        android:id="@+id/tvLblFechaNacimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vertical_margin"></TextView>
+    <TextView
+        android:id="@+id/tvLblTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vertical_margin"></TextView>
+    <TextView
+        android:id="@+id/tvLblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vertical_margin"></TextView>
+    <TextView
+        android:id="@+id/tvLblDescripcionContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center|bottom"
+        android:theme="@style/Theme.TareaActivity">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEditarDatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginBottom="@dimen/vertical_margin"
+            android:hint="@string/editar_datos"
+            android:textStyle="bold"
+            android:textSize="@dimen/siguiente_size" />
+    </LinearLayout>
+</LinearLayout>
